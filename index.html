@@ -5,6 +5,7 @@
         <title>Home page</title>
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         <link href="cssfiles/navbar.css" rel = "stylesheet" type ="text/css">
+        <script language="JavaScript" src="javascriptFiles/posting.js"></script>
         <style>
             body
             {
@@ -39,8 +40,11 @@
             <!-- Source: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
             <form >
                 <h3>Post a listing</h3>
+              <label for="title" text-indent: 5%;>Title</label>
+              <input type="text" id="title" name="titlemame" placeholder="Title..">
+              <br>
               <label for="fname" text-indent: 5%;>First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
               <br>
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -51,7 +55,7 @@
               <label for="location">Location</label>
               <input type="text" id="location" name="loc" placeholder="Location..">
               <br>
-              <label for="email">Location</label>
+              <label for="email">Email</label>
               <input type="text" id="email" name="emailaddress" placeholder="Email..">
               <br>
               <label for="post">Posting type</label>
