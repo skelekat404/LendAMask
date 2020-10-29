@@ -24,11 +24,11 @@
     <body style="background-color: #1A1A1D">
         <h1>Home Page</h1>
         <!-- Just a quick welcome to our page, along with an explanation of what our page does -->
-        Welcome to our project!         
+        <p id="fonts">Welcome to our project! This website is meant to bring awareness to covid-19 by providing information and allowing those who need or want to gives masks, a platform to do so and help out one another. </P>        
         <!-- creating a form to submit postings -->
         <div id="sections" style="background-color: #4E4E50;">
             <!-- Source: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
-            <form action="action_page.php">
+            <form >
                 <h3>Post a listing</h3>
               <label for="fname" text-indent: 5%;>First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -55,9 +55,10 @@
               <br>
               <textarea id="description" name="desc" placeholder="Write something.."></textarea>
               <br>
-              <input type="submit" value="Submit" id="button">
-          
+              <form><input type="button" value="Submit" onclick="thanks()"></button></form> 
+ 
             </form>
+            <p id="thankyou"></p>
           </div>
         <!-- navbar to the rest of the site -->
     </body>
