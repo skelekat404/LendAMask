@@ -16,21 +16,25 @@ function checkInput()
 
     if(cq2 == true)
     {
+        counter++;
         document.getElementById('counter').innerHTML = counter;
     }
 
     if(cq3 == true)
     {
+        counter++;
         document.getElementById('counter').innerHTML = counter;
     }
 
     if(cq4 == true)
     {
+        counter++;
         document.getElementById('counter').innerHTML = counter;
     }
 
     if(cq5 == true)
     {
+        counter++;
         document.getElementById('counter').innerHTML = counter;
     }
 }
