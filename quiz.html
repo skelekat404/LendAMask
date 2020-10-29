@@ -2,38 +2,72 @@
 <!-- This page will be an optional page containing a fun quiz with facts about covid -->
 <html>
     <head>
-        <title>Post page</title>
+        <title>Covid-19 Quiz</title>
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         <link href="cssfiles/navbar.css" rel = "stylesheet" type ="text/css">
+
+        <script language="JavaScript" src="quiz.js"></script>
     </head>
-    <body>
-        <div id="main">
-            <div id="header">
+    <body style="background-color: #1A1A1D">
+    
+        <div id="quiz" style="background-color: #4E4E50;">
                 <h1>Quiz</h1>
-            </div>
-
-            <form id="form1">
-
+                <h3>Instructions: Make sure to answer the questions IN ORDER and press submit once you are done. Refresh page to try again.</h3>
                 <h2>What is the mortality rate for COVID-19?</h2>
-                <label for="q1_a"><input type="radio" value="0" id="q1_a" />1.88%</label>
-                <label for="q1_b"><input type="radio" value="1" id="q1_b" />2.66%</label>
-                <label for="q1_c"><input type="radio" value="0" id="q1_c" />3.54%</label>
-                <label for="q1_d"><input type="radio" value="0" id="q1_d"/>4.58%</label>
-                
-                <h2>What age group is most affected by COVID-19?</h2>
-                <label for="q2_a"><input type="radio" value="0" id="q2_a"/>0-9 years old</label>
-                <label for="q2_b"><input type="radio" value="0" id="q2_b"/>15-24 years old</label>
-                <label for="q2_c"><input type="radio" value="0" id="q2_c" />45-54 years old</label>
-                <label for="q2_d"><input type="radio" value="1" id="q2_d" />85 years and older</label>
-                
-                
-                
-                <button type="submit" value="Submit">Submit</button>
-                
-                </form>
+                <input type="radio" value="0" onclick="checkInput()" id="q1_a" name="q1">
+                <label for="q1_a">1.88%</label>
+                <input type="radio" value="1" onclick="checkInput()" id="q1_b" name="q1">
+                <label for="q1_b">2.66%</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q1_c" name="q1">
+                <label for="q1_c">3.54%</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q1_d" name="q1">
+                <label for="q1_d">4.58%</label>
 
-            <p>Your grade is: <scan id="grade">___</scan></p>
-            <p id="grade2"></p>
-        </div>
+
+                <h2>What age group is most affected by COVID-19?</h2>
+                <input type="radio" value="0" onclick="checkInput()" id="q2_a" name="q2">
+                <label for="q2_a">0-9 years old</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q2_b" name="q2"> 
+                <label for="q2_b">15-24 years old</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q2_c" name="q2">
+                <label for="q2_c">45-54 years old</label>
+                <input type="radio" value="1" onclick="checkInput()" id="q2_d" name="q2">
+                <label for="q2_d">85 years and older</label>
+
+                <h2>How is COVID-19 passed on?</h2>
+                <input type="radio" value="1" onclick="checkInput()" id="q3_a" name="q3">
+                <label for="q3_a">Through droplets that come from your mouth and nose when you cough or breathe out</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q3_b" name="q3"> 
+                <label for="q3_b">Unclean water</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q3_c" name="q3">
+                <label for="q3_c">Being near an old person</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q3_d" name="q3">
+                <label for="q3_d">All of the above</label>
+
+                <h2>What are some common symptoms of Covid-19?</h2>
+                <input type="radio" value="0" onclick="checkInput()" id="q4_a" name="q4">
+                <label for="q4_a">Fever</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q4_b" name="q4"> 
+                <label for="q4_b">Cough</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q4_c" name="q4">
+                <label for="q4_c">Fatigue</label>
+                <input type="radio" value="1" onclick="checkInput()" id="q4_d" name="q4">
+                <label for="q4_d">All of the above</label>
+
+                <h2>Which scenario should you definitly wear a mask?</h2>
+                <input type="radio" value="0" onclick="checkInput()" id="q5_a" name="q5">
+                <label for="q5_a">Your own home</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q5_b" name="q5"> 
+                <label for="q5_b">Your car by yourself</label>
+                <input type="radio" value="1" onclick="checkInput()" id="q5_c" name="q5">
+                <label for="q5_c">The grocery store</label>
+                <input type="radio" value="0" onclick="checkInput()" id="q5_d" name="q5">
+                <label for="q5_d">Outside with no one nearby</label>
+                
+                <form><input type="button" value="Submit" onclick="calculate()"></button></form>            
+            </div>
+            <br><br><br>
+                <div id="quiz" style="background-color: #4E4E50;">Your results are: <p id="result"></p></div>
+                
     </body>
 </html>
