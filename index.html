@@ -5,6 +5,7 @@
         <title>Home page</title>
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         <link href="cssfiles/navbar.css" rel = "stylesheet" type ="text/css">
+        <script language="JavaScript" src="javascriptFiles/posting.js"></script>
         <style>
             body
             {
@@ -23,15 +24,27 @@
     </head>
     <body style="background-color: #1A1A1D">
         <h1>Home Page</h1>
+
+        <ul style="border-style: outset" >
+            <li><a  class="active" href="index.html" style="color: white" >Home Page</a></li>
+            <li><a  href="aboutus.html" style="color: white">About Us</a></li>
+            <li><a href="postings.html" style="color: white">Posts</a></li>
+            <li><a href="covid19.html" style="color: white">Covid-19 Information</a></li>
+            <li><a href="quiz.html" style="color: white">Covid-19 Quiz</a></li>
+        </ul>
+
         <!-- Just a quick welcome to our page, along with an explanation of what our page does -->
-        Welcome to our project!         
+        <p id="fonts">Welcome to our project! This website is meant to bring awareness to covid-19 by providing information and allowing those who need or want to gives masks, a platform to do so and help out one another. </P>        
         <!-- creating a form to submit postings -->
         <div id="sections" style="background-color: #4E4E50;">
             <!-- Source: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
-            <form action="action_page.php">
+            <form >
                 <h3>Post a listing</h3>
+              <label for="title" text-indent: 5%;>Title</label>
+              <input type="text" id="title" name="titlemame" placeholder="Title..">
+              <br>
               <label for="fname" text-indent: 5%;>First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
               <br>
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -42,7 +55,7 @@
               <label for="location">Location</label>
               <input type="text" id="location" name="loc" placeholder="Location..">
               <br>
-              <label for="email">Location</label>
+              <label for="email">Email</label>
               <input type="text" id="email" name="emailaddress" placeholder="Email..">
               <br>
               <label for="post">Posting type</label>
@@ -55,9 +68,10 @@
               <br>
               <textarea id="description" name="desc" placeholder="Write something.."></textarea>
               <br>
-              <input type="submit" value="Submit" id="button">
-          
+              <form><input type="button" value="Submit" onclick="thanks()"></button></form> 
+ 
             </form>
+            <p id="thankyou"></p>
           </div>
         <!-- navbar to the rest of the site -->
     </body>
