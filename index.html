@@ -5,12 +5,60 @@
         <title>Home page</title>
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         <link href="cssfiles/navbar.css" rel = "stylesheet" type ="text/css">
+        <style>
+            body
+            {
+                color: white;
+            }
+            h3
+            {
+                text-align: center;
+                background-color: #6F2232;
+                box-sizing: border-box;
+                border: 4px solid white;
+                color: white;
+
+            }
+        </style>
     </head>
-    <body>
-        <!-- creating an account will be on the home page: email, password, maker or healthcare or individual user account -->
-
+    <body style="background-color: #1A1A1D">
+        <h1>Home Page</h1>
         <!-- Just a quick welcome to our page, along with an explanation of what our page does -->
-
+        Welcome to our page!        
+        <!-- creating a form to submit postings -->
+        <div id="sections" style="background-color: #4E4E50;">
+            <!-- Source: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+            <form action="action_page.php">
+                <h3>Post a listing</h3>
+              <label for="fname" text-indent: 5%;>First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <br>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <br>
+              <label for="company">Company</label>
+              <input type="text" id="company" name="cname" placeholder="Company name..">
+              <br>
+              <label for="location">Location</label>
+              <input type="text" id="location" name="loc" placeholder="Location..">
+              <br>
+              <label for="email">Location</label>
+              <input type="text" id="email" name="emailaddress" placeholder="Email..">
+              <br>
+              <label for="post">Posting type</label>
+              <select id="post" name="posting">
+                <option value="masksa">Masks Availible</option>
+                <option value="masksn">Masks Needed</option>
+              </select>
+              <br>
+              <label for="description">Description</label>
+              <br>
+              <textarea id="description" name="desc" placeholder="Write something.."></textarea>
+              <br>
+              <input type="submit" value="Submit" id="button">
+          
+            </form>
+          </div>
         <!-- navbar to the rest of the site -->
     </body>
 </html>
