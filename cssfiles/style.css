@@ -1,3 +1,4 @@
+/* All of our headers should be styled this way*/
 h1
 {
     text-align: center;
@@ -8,6 +9,7 @@ h1
 
 }
 
+/* This was strictly for the about us page */
 #about_us
 {
     margin-right: 400px;
@@ -17,4 +19,36 @@ h1
     border-style: groove;
     border-color: white;
     color: white;
+}
+
+/* This will be for posts */
+#sections
+{ 
+    margin-right: 600px;
+    margin-left: 600px;
+    border-radius: 0px;
+    text-align: justify;
+    border-style: groove;
+    border-color: white;
+    color: white;
+    font-size: xx-large;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#description
+{
+    height:100px;
+    width:600px;
+}
+
+/* I needed to align the button*/
+#button
+{
+    /* Source: https://www.w3schools.com/howto/howto_css_center_button.asp */ 
+    margin: 0;    
+    top: 65%;
+    left: 80%;
+    -ms-transform: translateY(-60%);
+    transform: translateY(-60%);
 }
