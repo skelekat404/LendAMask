@@ -2,35 +2,24 @@
 <!-- This page will be an optional page containing a fun quiz with facts about covid -->
 <html>
     <head>
-        <title>Covid-19 Quiz</title>
+        <title>Post page</title>
         <link href="cssfiles/style.css" rel = "stylesheet" type ="text/css">
         <link href="cssfiles/navbar.css" rel = "stylesheet" type ="text/css">
-
-        <script language="JavaScript" src="javascriptFiles/quiz.js"></script>
     </head>
-    <body style="background-color: #1A1A1D">
-        <h1>Covid-19 Knowledge Quiz</h1>
-        <ul style="border-style: outset" >
-            <li><a   href="index.html" style="color: white" >Home Page</a></li>
-            <li><a  href="aboutus.html" style="color: white">About Us</a></li>
-            <li><a href="postings.html" style="color: white">Posts</a></li>
-            <li><a  href="covid19.html" style="color: white">Covid-19 Information</a></li>
-            <li><a class="active" href="quiz.html" style="color: white">Covid-19 Quiz</a></li>
-        </ul>
-        <div id="quiz" style="background-color: #4E4E50;">
+    <body>
+        <div id="main">
+            <div id="header">
                 <h1>Quiz</h1>
-                <h3>Instructions: Make sure to answer the questions IN ORDER and press submit once you are done. Refresh page to try again.</h3>
+            </div>
+
+            <form id="form1">
+
                 <h2>What is the mortality rate for COVID-19?</h2>
-                <input type="radio" value="0" onclick="checkInput()" id="q1_a" name="q1">
-                <label for="q1_a">1.88%</label>
-                <input type="radio" value="1" onclick="checkInput()" id="q1_b" name="q1">
-                <label for="q1_b">2.66%</label>
-                <input type="radio" value="0" onclick="checkInput()" id="q1_c" name="q1">
-                <label for="q1_c">3.54%</label>
-                <input type="radio" value="0" onclick="checkInput()" id="q1_d" name="q1">
-                <label for="q1_d">4.58%</label>
-
-
+                <label for="q1_a"><input type="radio" value="0" id="q1_a" />1.88%</label>
+                <label for="q1_b"><input type="radio" value="1" id="q1_b" />2.66%</label>
+                <label for="q1_c"><input type="radio" value="0" id="q1_c" />3.54%</label>
+                <label for="q1_d"><input type="radio" value="0" id="q1_d"/>4.58%</label>
+                
                 <h2>What age group is most affected by COVID-19?</h2>
                 
                 <p></p>
@@ -81,6 +70,9 @@
                 <div id="quiz" style="background-color: #4E4E50;">Your results are: <p id="result"></p></div>
 
             
+
+                
+        </div>
 
     </body>
 </html>
