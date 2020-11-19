@@ -127,3 +127,12 @@ h1
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+#link
+{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: white;
+}
